@@ -4,9 +4,7 @@ const router = express.Router();
 
 router.get("/new", (req, res) => {
   res.render("articles/new", { article: new Article() });
-});
-
-router.get("/:id", (req, res) => {});
+});  
 
 router.post("/", async (req, res) => {
   const article = new Article({

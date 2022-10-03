@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const articleRouter = require("./routes/articles");
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/blog')
+mongoose.connect('mongodb://127.0.0.1:27017/blog')
 
 app.set("view engine", "ejs");
 
